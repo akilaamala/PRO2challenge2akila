@@ -21,25 +21,17 @@ let time= setTimeout(function(){
 	currentTime()
 }, 1000
 );
-
 }
 
 // Adds 0 to single digit
 function updateTime(c) {
 
 if(c < 10) {
-
 	return "0" + c;
-
 }
-
 else{
-	
 	return c;
-
 }
 }
-
-
 
 currentTime();

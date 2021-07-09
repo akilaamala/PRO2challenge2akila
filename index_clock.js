@@ -1,4 +1,3 @@
-
 function currentTime() { 
 let date= new Date();
 let hour= date.getHours(); 
@@ -35,3 +34,28 @@ else{
 }
 
 currentTime();
+
+let switches = document.getElementsByClassName('switch');
+
+let style = localStorage.getItem('style');
+
+if (style == null) {
+  setTheme('light');
+} else {
+  setTheme(style);
+}
+
+for (let i of switches) {
+  i.addEventListener('click', function () {
+    let theme = this.dataset.theme;
+    setTheme(theme);
+  });
+}
+
+function setTheme(theme) {
+  if (theme == 'day') {
+    document.getElementById('switcher-id').href = 'day.css';
+  } else if (theme == 'night') {
+    document.getElementById('switcher-id').href = 'night.css';
+  }   localStorage.setItem('style', theme);
+}

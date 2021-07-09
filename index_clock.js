@@ -35,12 +35,14 @@ else{
 
 currentTime();
 
+//I added the things below for the resit. 
+
 let switches = document.getElementsByClassName('switch');
 
 let style = localStorage.getItem('style');
 
 if (style == null) {
-  setTheme('light');
+  setTheme('day');
 } else {
   setTheme(style);
 }

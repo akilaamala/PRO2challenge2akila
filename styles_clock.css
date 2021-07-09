@@ -32,6 +32,7 @@ header {
 }
 
 .title{
+font-family: impact;
   text-align: center;
 }
 
@@ -43,13 +44,13 @@ header {
 
 #clock {
   margin-top: 10%;
-  font-family: 'Inria Serif', serif;
+  font-family: helvetica;
   color: #FFFFFF;
   margin: 0;
     font-size: 56px;
 }
 #date {
-  font-family: 'Inria Serif', serif;
+  font-family: helvetica;
   color: #FFFFFF;
   margin: 0;
     font-size: 56px;
